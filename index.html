@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fafa Bakery</title>
+</head>
+<body>
+    <header class="site-header">
+        <div>
+            <img src="" alt="">
+            <div>
+                <h2>Fafa Bakery</h2>
+                    <p>Menjual roti dan manisan kesukaan anda</p>
+            </div>
+        </div>
+        <nav class="main-menu" aria-label="Menu Utama">
+            <ul id="menu"></ul>
+        </nav>
+    </header>
+    <main class="site-content">
+        <section id="beranda">
+            <h2>Haloo~</h2>
+            <p>Roti rumahan yang dibuat dengan tangan-tangan telaten</p>
+        </section>
+        <section id="produk">
+            <h2>Produk Kami</h2>
+            <div class="filters" id="filter-produk"></div>
+            <p class="meta" id="jumlah-produk"></p>
+            <div class="grid" id="daftar-produk"></div>
+        </section>
+        <section id="kontak">
+            <h2>Hubungi Kami</h2>
+            <p>Email: farhanahyahya09@gmail.com</p>
+            <form id="form-kontak" novalidate>
+                <label>Nama <input type="text" name="nama"></label>
+                <label>Pesan <textarea name="pesan" rows="4"></textarea></label>
+                <p id="form-status" role="status"></p>
+                <div class="tombol-kontak-group">
+                    <button onclick="kirimPesanWA(event)" type="button" class="btn-wa">
+                        <i class="bi bi-whatsapp"></i> Kirim ke WhatsApp
+                    </button>
+                    <button onclick="kirimPesanEmail(event)" type="submit" class="btn-email">
+                        <i class="bi bi-envelope-fill"></i> Kirim ke Email
+                    </button>
+                </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; <span id="tahun"></span>Fafa Bakery | Hak cipta dilindungi</p>
+    </footer>
+    <script src="data/produk.json"></script>
+</body>
+</html>

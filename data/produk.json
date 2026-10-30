@@ -1,0 +1,21 @@
+{
+    "site": {
+        "nama": "Fafa Bakery",
+        "email": "farhanahyahya@gmail.com"
+    },
+    "menu": [
+        {
+            "id"    : "beranda",
+            "label" : "beranda"
+        },
+        {
+            "id"    : "produk",
+            "label" : "produk"
+        },
+        {
+            "id"    : "kontak",
+            "label" : "kontak"
+
+        }
+    ]
+}
